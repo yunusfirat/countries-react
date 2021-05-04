@@ -1,15 +1,16 @@
 import React  from "react";
 import "./styling/search.css";
-import Countries from "./Countries";
-const inputContext = React.createContext();
 
 const Search = ( { searchInput, setSearchInput, regionInput, setRegionInput }) => {
     const handleSearchInput = (event) => {
         event.target.id === "country" ? setSearchInput(event.target.value) : setRegionInput(event.target.value);
     };
-    <inputContext.Provider value="light" >
-    <Countries/>;
-    </inputContext.Provider>;
+    // const submitSearch = (event) => {
+    //     event.preventDefault();
+    //     if(event.target.id === "country"){
+    //         setSearchInput(event.target.value);
+    //     }
+    // };
     return (
         <div className="container-search">
             <form>
