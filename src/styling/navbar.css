@@ -13,6 +13,7 @@
 
 .theme {
     display: flex;
+    cursor: pointer;
 
 }
 .linktitle {
