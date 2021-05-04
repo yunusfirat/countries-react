@@ -2,7 +2,6 @@ import React  from "react";
 import data from "./countriesAll.json";
 import "./styling/countries.css";
 const Countries = ( { searchInput, regionInput } ) => {
-    // if(searchInput.includes(name) || searchInput.includes(capital) || regionInput.includes(region)){
         function checkInput(country) {
             if(searchInput !==""){
                 return country.name.toLowerCase().includes(searchInput.toLowerCase())
@@ -12,7 +11,6 @@ const Countries = ( { searchInput, regionInput } ) => {
             }
         }
     const newData = data.filter(checkInput);
-    console.log(regionInput);
 return(
     <div className="country-container">
         {newData.map((country,index) => {
