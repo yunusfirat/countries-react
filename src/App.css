@@ -4,6 +4,9 @@
     outline: 0px;
     box-sizing: border-box;
 }
+div {
+  display: block;
+}
 
 .App {
   background: rgb(238, 238, 238);

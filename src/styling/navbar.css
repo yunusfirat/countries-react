@@ -1,0 +1,29 @@
+.navbar{
+    background: rgb(221, 221, 221);
+    min-width: 100vw;
+    height: 100px;
+    color: rgb(17, 21, 23);
+    padding: 20px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.theme {
+    display: flex;
+
+}
+.linktitle {
+    padding-left: 40px;
+    color: rgb(17, 21, 23);
+    text-decoration: none;
+    font: bold 26px Nunito, sans-serif;
+}
+
+p{
+    padding-left: 10px;
+    margin-right: 30px;
+    font:bold 14px Nunito, sans-serif;;
+}
