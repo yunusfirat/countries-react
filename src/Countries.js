@@ -1,7 +1,9 @@
 import React  from "react";
 import data from "./countriesAll.json";
 import "./styling/countries.css";
+
 const Countries = ( { searchInput, regionInput } ) => {
+    // console.log(data);
         function checkInput(country) {
             if(searchInput !==""){
                 return country.name.toLowerCase().includes(searchInput.toLowerCase())
