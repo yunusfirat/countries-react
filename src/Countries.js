@@ -18,7 +18,7 @@ return(
             const { name, population, flag, region, capital } = country;
                 return(
                     <Link to={`/country/${name}`} key={index}>
-                    <div className="country" key={index}>
+                    <div className="countries" key={index}>
                         <img src={flag} alt={name}/>
                         <h5>{name}</h5>
                         <strong>population: <span>{population}</span></strong>

@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 30px;
 }
-.country {
+.countries {
     display: flex;
     flex-direction: column;
     box-shadow: rgb(18 18 18) 0px 1px 3px;
