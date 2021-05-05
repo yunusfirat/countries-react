@@ -1,9 +1,8 @@
 import React  from "react";
 import data from "./countriesAll.json";
 import "./styling/countries.css";
-
+import { Link } from "react-router-dom";
 const Countries = ( { searchInput, regionInput } ) => {
-    // console.log(data);
         function checkInput(country) {
             if(searchInput !==""){
                 return country.name.toLowerCase().includes(searchInput.toLowerCase())
@@ -18,6 +17,7 @@ return(
         {newData.map((country,index) => {
             const { name, population, flag, region, capital } = country;
                 return(
+                    <Link to={`/country/${name}`} key={index}>
                     <div className="country" key={index}>
                         <img src={flag} alt={name}/>
                         <h5>{name}</h5>
@@ -25,6 +25,7 @@ return(
                         <strong>Region: <span>{region}</span></strong>
                         <strong>Capital: <span>{capital}</span></strong>
                     </div>
+                    </Link>
                 );
         })}
         </div>
