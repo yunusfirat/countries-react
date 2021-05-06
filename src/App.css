@@ -45,4 +45,6 @@ div {
 }
 .darkmode{
   background: rgb(32, 44, 55);
+  width: 100vw;
+  min-height: 84.5vh;
 }
