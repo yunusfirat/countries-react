@@ -39,7 +39,7 @@ button {
 .change::placeholder {
     /* WebKit, Blink, Edge */
     color: #fff;
-    text-align: center;
+    text-align: left;
 }
 .change {
     height: 100%;
