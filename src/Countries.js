@@ -17,7 +17,7 @@ return(
         {newData.map((country,index) => {
             const { name, population, flag, region, capital } = country;
                 return(
-                    <Link to={`/country/${name}`} key={index}>
+                    <Link to={`/country/${name}`} key={index} style={{ textDecoration:"none" }}>
                     <div className="countries" key={index}>
                         <img src={flag} alt={name}/>
                         <h5>{name}</h5>
