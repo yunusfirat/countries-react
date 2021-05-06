@@ -43,3 +43,6 @@ div {
     transform: rotate(360deg);
   }
 }
+.darkmode{
+  background: rgb(32, 44, 55);
+}

@@ -10,6 +10,18 @@
     -webkit-box-pack: justify;
     justify-content: space-between;
 }
+.navbar-darkmode{
+    background: rgb(43, 57, 69);
+    min-width: 100vw;
+    height: 100px;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
 
 .theme {
     display: flex;
@@ -21,6 +33,13 @@
     color: rgb(17, 21, 23);
     text-decoration: none;
     font: bold 26px Nunito, sans-serif;
+}
+
+.linktitle-darkmode{
+    padding-left: 40px;
+    text-decoration: none;
+    font: bold 26px Nunito, sans-serif;
+    color: rgb(255, 255, 255);
 }
 
 p{
