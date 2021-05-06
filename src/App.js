@@ -10,8 +10,8 @@ function App() {
   const [regionInput, setRegionInput] = useState("");
 
   return (
-    <div className="App">
       <Router>
+    <div className="App">
       <Navbar />
       <Switch>
         <Route exact path="/">
@@ -20,9 +20,8 @@ function App() {
         </Route>
       <Route path="/country/:name" component={Country}/>
       </Switch>
-
-      </Router>
     </div>
+      </Router>
   );
 }
 

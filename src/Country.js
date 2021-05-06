@@ -9,19 +9,15 @@ const Country = ({ match }) => {
     return (
         <>
             <div>
-                {/* <Link to='/' className='btn btn-primary'>
-          Back to Countries
-        </Link> */}
                 {clickedCountry.map((country, index) => {
-                    const { name, flag, population, region, capital, languages, subregion, topLevelDomain, currencies,nativeName, borders } = country;
+                    const { name, flag, population, region, capital, languages, subregion, topLevelDomain, currencies, nativeName, borders } = country;
                     let domain = topLevelDomain[0];
                     let currency = currencies[0].name.concat(".");
-                    // let border =borders.join(" ");
-                    console.log(borders);
                     let stringLanguages = languages.map((language) => language.name);
                     let sortedLanguages = stringLanguages.join(". ").concat(".");
                     return (
                         <div className="second-container" key={index}>
+                                <Link to='/' className='btn btn-primary'> Back to Countries</Link>
                             <div>
                                 <div className="country" key={index}>
                                     <div><img src={flag} alt={name} className="images" /></div>
@@ -42,14 +38,14 @@ const Country = ({ match }) => {
                                             </div>
                                         </div>
                                         <div className="border-countries">
-                                        <strong>Border Countries:</strong>
-                                        <div className="border-link-container">
-                                        {borders.map((border) => {
-                                            return(
-                                                <Link className="border-link">{border}</Link>
-                                            );
-                                        })}
-                                        </div>
+                                            <strong>Border Countries:</strong>
+                                            <div className="border-link-container">
+                                                {borders.map((border) => {
+                                                    return (
+                                                        <Link className="border-link" style={{ textDecoration: "none" }}>{border}</Link>
+                                                    );
+                                                })}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

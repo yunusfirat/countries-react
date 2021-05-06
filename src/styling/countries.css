@@ -33,6 +33,8 @@ strong {
     padding-bottom: 10px;
     color: rgb(17, 21, 23);
     font: 600 14px Nunito, sans-serif;
+    font-size: larger;
+    
 }
 span {
     color: rgb(17, 21, 23);
