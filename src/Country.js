@@ -3,9 +3,7 @@ import data from "./countriesAll.json";
 import "./styling/country.css";
 import { Link } from "react-router-dom";
 const Country = ({ match }) => {
-    const { name } = match.params;
     const clickedCountry = data.filter((country) => country.name === match.params.name);
-    console.log(name);
     return (
         <>
             <div>
@@ -40,9 +38,10 @@ const Country = ({ match }) => {
                                         <div className="border-countries">
                                             <strong>Border Countries:</strong>
                                             <div className="border-link-container">
-                                                {borders.map((border) => {
+                                                {borders.map((border,index) => {
+                                                    console.log(border);
                                                     return (
-                                                        <Link className="border-link" style={{ textDecoration: "none" }}>{border}</Link>
+                                                        <Link key={index} to={`/country/${border}`} className="border-link" style={{ textDecoration: "none" }}>{border}</Link>
                                                     );
                                                 })}
                                             </div>

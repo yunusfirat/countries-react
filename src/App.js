@@ -4,6 +4,7 @@ import Countries from "./Countries";
 import Search from "./Search";
 import Country from "./Country";
 import { useState } from "react";
+import CountryCode from "./CountryCode";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   const [searchInput, setSearchInput] = useState("");
@@ -22,6 +23,9 @@ function App() {
         </Route>
       <Route path="/country/:name" component={Country}/>
       </Switch>
+      <Route path="/country/:border">
+        <CountryCode />
+      </Route>
     </div>
       </Router>
   );

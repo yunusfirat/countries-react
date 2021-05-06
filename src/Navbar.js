@@ -8,7 +8,7 @@ const Navbar = ({ clicked, SetClicked }) => {
 return (
     <div className={clicked ? "navbar-darkmode" : "navbar"}>
         <div>
-            <a className={clicked ? "linktitle-darkmode" : "linktitle" } href="/"> Where in the world</a>
+            <a className={clicked ? "linktitle-darkmode" : "linktitle" } style={{ textDecoration:"none" }} href="/"> Where in the world</a>
         </div>
         <div className="theme">
             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
