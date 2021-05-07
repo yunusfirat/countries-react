@@ -17,6 +17,22 @@
     justify-content: center;
     background: rgb(221, 221, 221);
 }
+.countries-darkmode {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: rgb(18 18 18) 0px 1px 3px;
+    width: 240px;
+    margin: 20px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: rgb(43, 57, 69);
+}
 
 img {
     width: 100%;
@@ -36,7 +52,20 @@ strong {
     font-size: larger;
     
 }
+.strong-darkmode {
+    padding-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
 span {
     color: rgb(17, 21, 23);
     font: 300 14px Nunito, sans-serif;
+}
+
+.span-darkmode {
+    color: rgb(255, 255, 255);
+}
+
+.h5-darkmode {
+    color: rgb(255, 255, 255);
+    margin: 10px 0px;
 }
